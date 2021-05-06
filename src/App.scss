@@ -11,12 +11,18 @@ html {
 
 .App {
     text-align: center;
-    height: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10px;
+    box-sizing: border-box;
+}
+
+.App-wrapper {
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -143,4 +149,21 @@ html {
     justify-content: space-between;
     width: 100%;
     max-width: 450px;
+}
+
+footer {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    color: #ccc;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+
+    a {
+        font-weight: 700;
+        color: #0094ff;
+        text-decoration: none;
+    }
 }
