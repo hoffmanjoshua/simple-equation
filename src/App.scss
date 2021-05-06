@@ -1,0 +1,143 @@
+html,
+body,
+#root {
+    height: 100%;
+}
+
+html {
+    background-color: #333;
+    box-sizing: border-box;
+}
+
+.App {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#equation-input {
+    resize: none;
+    width: 100%;
+    max-width: 450px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+    background-color: transparent;
+    border: 3px solid #ddd;
+    color: #ddd;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#result {
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    height: 100px;
+    text-align: center;
+    background-color: #666;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 3px;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+
+    &.gray {
+        background-color: #666;
+        color: #fff;
+        fill: #fff !important;
+    }
+
+    &.white {
+        background-color: #fff;
+        color: #111;
+        fill: #111 !important;
+    }
+
+    &.black {
+        background-color: #000;
+        color: #fff;
+        fill: #fff !important;
+    }
+
+    &.blue {
+        background-color: #eee;
+        color: #0176dc;
+        fill: #0176dc !important;
+    }
+}
+
+.control-overflow {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// COLOR PICKER
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.picker {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    margin: 5px;
+    cursor: pointer;
+
+    .color-display {
+        left: 2px;
+        top: 2px;
+        height: 16px;
+        width: 16px;
+        border-radius: 5px;
+        position: absolute;
+
+        &.grey {
+            background-color: #666;
+        }
+
+        &.white {
+            background-color: #eee;
+        }
+
+        &.black {
+            background-color: #000;
+        }
+
+        &.blue {
+            background-color: #0176dc;
+        }
+    }
+}
+
+#download {
+    fill: #ddd;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.row.space-between {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 450px;
+}
